@@ -1,0 +1,32 @@
+GET http://localhost:3000/sucursal
+### Obteniendo usuarios
+GET http://localhost:3000/users
+
+
+
+### obteniendo un unico ususario
+
+GET http://localhost:3000/users/7
+
+### Creando usuarios
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "Mav",
+    "country": "shile"
+}
+
+### Borrando un usuario
+DELETE http://localhost:3000/users/8
+
+
+### Modificando un usuario
+PUT http://localhost:3000/users/7
+Content-Type: application/json
+
+{
+    "name": "gai",
+    "country": "Boliviano"
+}
